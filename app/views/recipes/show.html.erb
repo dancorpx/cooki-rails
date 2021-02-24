@@ -1,0 +1,14 @@
+<section class='banner'>
+    <img src="<%= @recipe.image %>" alt="Banner Image">      
+    <h1><%= @recipe.title %></h1>
+</section>
+
+<div class="container">
+    <br>
+    <p><%= @recipe.ingredients %></p>
+    <p><%= @recipe.method %></p>
+</div>
+
+<br><br><br>
+
+<%= link_to 'Back to Index', recipes_path, class: "btn btn-primary" %><br/>
