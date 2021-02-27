@@ -1,9 +1,10 @@
 <section id="main" class="cards">
   <% @recipes.each do |recipe| %>
-      <div class="card">
+    <div class="card">
+      <%= link_to recipe do %>   
         <img src="<%= recipe.image %>">
-        <%= recipe.title %>
-        <%= link_to "Show", recipe %>
-      </div>
+        <p><%= recipe.title %></p>
+      <% end %>
+    </div>
   <% end %>
 </section>

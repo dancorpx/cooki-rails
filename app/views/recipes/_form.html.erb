@@ -1,0 +1,17 @@
+
+  <%= simple_form_for(@recipe) do |f| %>
+    <%= f.error_notification %>
+    <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+    <div class="form-inputs">
+      <%= f.input :title, placeholder: "Title", label: false %>
+      <%= f.input :ingredients, placeholder: "Ingredients", label: false %>
+      <%= f.input :method, placeholder: "Method", label: false %>
+      <%= f.input :image, placeholder: "Image Url", label: false %>
+      <%= f.input :flavour, placeholder: "Flavour", label: false %>
+    </div>
+
+    <div class="form-actions">
+      <%= f.button :submit, class: "btn-primary" %>
+    </div>
+  <% end %>

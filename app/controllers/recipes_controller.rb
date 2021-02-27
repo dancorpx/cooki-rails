@@ -13,10 +13,10 @@ class RecipesController < ApplicationController
   end
 
   def create
-   @recipe = Post.new(recipe_params)
+   @recipe = Recipe.new(recipe_params)
 
    respond_to do |format|
-    if @post.save
+    if @recipe.save
       format.html { redirect_to @recipe }
     else
       format.html { render :new }
