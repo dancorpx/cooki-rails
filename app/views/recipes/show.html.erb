@@ -4,9 +4,14 @@
 </section>
 
 <div class="container">
-    <br>
-    <p><%= @recipe.ingredients %></p>
-    <p><%= @recipe.method %></p>
+    <div class="box">
+        <h2>INGREDIENTS</h2>
+        <p class="ingredients"><%= @recipe.ingredients %></p>
+    </div>
+    <div class="box">
+        <h2>METHOD</h2>
+        <p><%= @recipe.method %></p>
+    </div>
 </div>
 
 <br><br><br>
