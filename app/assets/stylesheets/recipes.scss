@@ -30,8 +30,9 @@ section {
 .card {
   height: 20vh;
   background-color: #fff;
-  margin: 5px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+  padding-left: 3%;
+  // box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   width: 47%;
   border-radius: 3px;
 }
@@ -43,7 +44,7 @@ section {
 }
 
 .card p {
-  margin: 5px 0 0 0;
+  margin: 0;
   padding-left: 5px;
   color: black;
 }
@@ -152,3 +153,44 @@ section {
   color: #fff;
 }
 
+
+// search bar
+.search {
+  position: relative;
+  height: 50px;
+}
+
+.search .input {
+  background-color: #fff;
+  border: 0;
+  font-size: 18px;
+  padding: 15px;
+  height: 50px;
+  width: 50px;
+  transition: width 0.3s ease;
+}
+
+.searchBtn {
+  background-color: #fff;
+  border: 0;
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  transition: transform 0.3s ease;
+}
+
+.searchBtn:focus, .input:focus {
+  outline: none;
+}
+
+.search.active .input {
+  width: 200px;
+}
+
+.search.active .searchBtn {
+  transform: translateX(198px);
+}
