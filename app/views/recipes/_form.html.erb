@@ -3,7 +3,7 @@
     <%= f.error_notification %>
     <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
-    <div class="form-inputs">
+    <div class="form-inputs box">
       <%= f.input :title, placeholder: "Title", label: false %>
       <%= f.input :ingredients, placeholder: "Ingredients", label: false %>
       <%= f.input :method, placeholder: "Method", label: false %>
@@ -12,6 +12,6 @@
     </div>
 
     <div class="form-actions">
-      <%= f.button :submit, class: "btn-primary" %>
+      <%= f.button :submit, class: "btn" %>
     </div>
   <% end %>
