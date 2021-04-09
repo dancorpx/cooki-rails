@@ -1,28 +1,24 @@
-<nav class="navbar">
-<span class="open-slide">
-  <a href="#" onclick="openSlideMenu()">
-    <svg width="30" height="30">
-      <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
-      <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
-      <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
-    </svg>
-  </a>
-</span>
-
-<ul class="navbar-nav">
-  <li><a href="/">Home</a></li>
-  <li><a href="#">About</a></li>
-  <li><%= link_to "New Recipe", new_recipe_path %></li>
-  <li><a href="#">Contact</a></li>
-</ul>
-<h1>COOKI</h1>
-
-</nav>
-
-<div id="side-menu" class="side-nav">
-  <a href="#" onclick="closeSlideMenu()" class="btn-close">&times;</a>
-  <a href="#">Home</a>
-  <a href="#">About</a>
-  <a href="#">New Recipe</a>
-  <a href="#">Contact</a>
-</div>
+<nav>
+    <div class="logo">
+      <h4>Cooki</h4>
+    </div>
+    <ul class="nav-links">
+      <li>
+      <%= link_to "Home", root_path %>
+      </li>
+      <li>
+        <a href="#">About</a>
+      </li>
+      <li>
+        <%= link_to "New Recipe", new_recipe_path %>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+    </ul>
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
