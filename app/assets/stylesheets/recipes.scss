@@ -48,21 +48,24 @@ body {
   color: #efedd6;
   font-size: small;
 }
+.section-heading svg {
+  font-weight: bold;
+  text-transform: uppercase;
+  height: 4rem;
+  width: 4rem;
+  text-align: center;
+}
 
 section {
   display: flex;
   flex-wrap: wrap;
-  // border: #BC363B 1px solid;
   justify-content: space-around;
 }
-
-
 
 .card {
   height: 20vh;
   background-color: #fff;
   margin-top: 10px;
-  // padding-left: 3%;
   // box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   width: 47%;
   border-radius: 3px;

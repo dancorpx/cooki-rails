@@ -1,8 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+              "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
 <svg xmlns="http://www.w3.org/2000/svg"
      width="1.33333in" height="1.36667in"
      viewBox="0 0 120 123">
   <path id="Imported Path"
-        fill="none" stroke="black" stroke-width="2"
+        fill="none" stroke="black" stroke-width="1"
         d="M 97.99,0.00
            C 101.29,0.00 103.96,2.68 103.96,5.99
              103.96,9.29 101.29,11.97 97.99,11.97

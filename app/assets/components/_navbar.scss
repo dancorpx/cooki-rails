@@ -114,11 +114,12 @@ main {
   .navbar {
       bottom: 0;
       width: 100vw;
-      height: 5rem;
+      height: 4rem;
   }
 
   .logo {
-      display: none;
+    height: 8vh;
+    
   }
 
   .navbar-nav {
@@ -127,6 +128,7 @@ main {
   
   .nav-link {
       justify-content: center;
+      height: 4rem;
   }
 
   main {
