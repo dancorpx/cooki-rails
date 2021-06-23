@@ -11,7 +11,7 @@ class RecipesController < ApplicationController
 
   def show
     ing = @recipe.ingredients
-    @ingred = ing.split(" ")
+    @ingred = ing.split(",")
   end
 
   def new
