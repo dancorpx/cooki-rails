@@ -6,7 +6,16 @@
 <div class="container">
     <div class="box">
         <h2>INGREDIENTS</h2>
-        <p class="ingredients"><%= @recipe.ingredients %></p>
+        <p class="ingredients">
+            
+            <ul>
+            <% @ingred.each do |item| %>
+                <li>
+                <%= "#{item}" %>
+                </li>
+            <% end %>
+            </ul>
+        </p>
     </div>
     <div class="box">
         <h2>METHOD</h2>

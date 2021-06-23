@@ -5,7 +5,13 @@ class RecipesController < ApplicationController
     @recipes = Recipe.all
   end
 
+  def ingredients 
+    @ingredients = @recipe.ingredients
+  end
+
   def show
+    ing = @recipe.ingredients
+    @ingred = ing.split(" ")
   end
 
   def new
