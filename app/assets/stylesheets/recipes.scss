@@ -99,14 +99,25 @@ section {
   margin: 20px;
 }
 
-.form-inputs input, textarea {
+.form-inputs input, p {
+  width: 100%;
+  line-height: 2rem;
+  border: 0;
+  font-size: 1rem;
+  padding: 5px 0px 5px 30px;
+  font-family: 'Open Sans', sans-serif;
+  
+}
+
+textarea {
   padding: 30px;
   border: 0;
   width: 100%;
   font-size: 1rem;
-  background-color: #2d2d2d;
-  color: white;
+  // background-color: #2d2d2d;
+  color: black;
   border-radius: 4px;
+  font-family: inherit;
 }
 
 .form-actions {
@@ -120,32 +131,42 @@ section {
   max-width: 100%;
 }
 
-
-
-// buttons
-
-.btn-danger {
-  background-color: #BC363B;
+.styled-input p {
+  color:#5C636A;
+  width: auto;
 }
 
-.btn-warning {
-  background-color: #F8CA35;
+select {
+  // -webkit-appearance: none;
+  height: 7vh;
+  width: 30vw;
+  padding: 7px 7px 7px 7px;
+  font-size: 16px;
+  color:#5C636A;
+  background-color: white;
+  border: 0px solid black;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px -2px #9098A9;
+  font-family: inherit;
+  cursor: pointer;
 }
 
-.btn-secondary {
-  background-color: #5C636A;
+option {
+  color: #223254;
+}
+option:focus {
+  outline: none;
+  border-color: #0077FF;
 }
 
-.btn-success {
-  background-color: #3B7448;
+.styled-input select {
+  margin-right: 10px;
 }
 
-.btn-light {
-  background-color: #F8F9FA;
-}
-
-.btn-dark {
-  background-color: #1C1F23;
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 // recipe show styles
@@ -177,17 +198,25 @@ section {
   color: #000;
 }
 
+
+// button
 .btn {
-  border: #000 solid 2px;
+  border: #000 solid 0.1em;
   background-color: #fff;
   color: #000;
-  padding: 10px 10px;
-  // border-radius: 20px;
+  padding: 15px 30px 15px 30px;
+  border-radius: 0.12em;
   cursor: pointer;
-  height: 10vh;
+  height: auto;
   font-size: 1rem;
-  text-transform: uppercase;
-  
+  text-transform: uppercase; 
+  box-shadow: 0 1px 3px -2px #9098A9;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  color: white;
+  background-color: black;
 }
 
 .btn-primary {
@@ -241,6 +270,14 @@ section {
 }
 
 // New view
+
+// Error notification
+.error_notification, .error {
+  display: flex;
+  justify-content: center;
+  color: red;
+}
+
 
 // testing
 .red {

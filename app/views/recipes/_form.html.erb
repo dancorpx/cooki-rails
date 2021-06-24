@@ -3,24 +3,26 @@
     <%= f.error_notification %>
     <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
-    <div class="form-inputs box">
-      <div class="styled-input">
-        <%= f.input :title, placeholder: "Title", label: false %>
-      </div>
-      <div class="styled-input">
-        <%= f.input :ingredients, placeholder: "Ingredients", label: false %>
-      </div>
-      <div class="styled-input">
-        <%= f.input :image, placeholder: "Image Url", label: false %>
-      </div>
-      <div class="styled-input">
-        <%= f.input :flavour, placeholder: "Flavour", label: false %>
-      </div>
-      <div class="styled-input">
-        <%= f.input :method, placeholder: "Method", label: false %>
+    <div class="container">
+      <div class="form-inputs">
+        <div class="styled-input box">
+          <%= f.input :title, placeholder: "Title", label: false %>
+        </div>
+        <div class="styled-input box">
+          <%= f.input :ingredients, placeholder: "Ingredients", label: false %>
+        </div>
+        <div class="styled-input box">
+          <%= f.input :image, placeholder: "Image URL", label: false %>
+        </div>
+        <div class="styled-input box flex">
+          <p>Category</p>
+          <%= f.select :flavour, ['Breakfast', 'Lunch', 'Dinner', 'Drinks', 'Dessert', 'Basics'], placeholder: "Category", label: true %>
+        </div>
+        <div class="styled-input box">
+          <%= f.input :method, placeholder: "Method", label: false %>
+        </div>
       </div>
     </div>
-
     <div class="form-actions">
       <%= f.button :submit, class: "btn" %>
     </div>
