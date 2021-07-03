@@ -91,6 +91,8 @@ section {
   color: #5C636A;
 }
 
+
+
 // Form
 .form-inputs {
   display: flex;
@@ -100,7 +102,7 @@ section {
 }
 
 .form-inputs input, p {
-  width: 100%;
+  // width: 100%;
   line-height: 2rem;
   border: 0;
   font-size: 1rem;
@@ -282,4 +284,31 @@ option:focus {
 // testing
 .red {
   border: solid red 1px;
+}
+
+/* large screens */
+@media only screen and (min-width: 600px) {
+ 
+  .section-heading {
+    justify-content: center;
+
+  }
+
+  section {
+    // margin-left: 7vw;
+    // border: solid blue 1px;
+    max-width: 80vw;
+    margin: auto;
+    padding-top: 2vh;
+  }
+  .card {
+    // border: solid red 1px;
+    width: 30%;
+  }
+  
+  .card img {
+    // border: solid red 1px;
+    width: 80%;
+  }
+  
 }
