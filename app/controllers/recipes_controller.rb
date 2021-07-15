@@ -12,6 +12,10 @@ class RecipesController < ApplicationController
   def show
     ing = @recipe.ingredients
     @ingred = ing.split(",")
+
+    # require 'simple_format'
+    # @simple_method = SimpleFormat::Converter.new
+
   end
 
   def new
